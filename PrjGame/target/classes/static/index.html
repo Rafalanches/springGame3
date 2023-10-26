@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site dos joguin bão</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body> 
+    <div class="header">
+        <h1>Cadastro e Pesquisa de Jogos</h1>
+    </div>
+    <div class="row">
+    <div class="column side">
+    </div>
+    <p><div class="column middle">
+        <table align="center" cellspacing="8">
+            <tr>
+                <td>
+                    <img src="200w.webp">
+                </td>
+                <td>
+    <div id="cadastro">
+        <h2>Cadatro de Jogo</h2>
+        <form id="cadastroForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="plataform">Plataforma:</label>
+            <input type="text" id="plataform" name="plataform" required><br>
+
+            <button type="submit">Cadastrar</button>
+            <p>
+            <button type="button" onclick="atualizarJogo()">🔁Atualizar</button>
+            <p>
+            <button type="button" onclick="deletarJogo()">❌Deletar</button>
+            
+        </form>
+    </div>
+    
+    <div id="pesquisa">
+        <h2>Pesquisa de Jogo</h2>
+        <form id="pesquisaForm">
+            <label for="searchId">ID do Jogo:</label>
+            <input type="text" id="searchId" name="searchId"><br>
+
+            <button type="button" onclick="pesquisarJogo()">Pesquisar</button>
+        </form>
+        <p>
+        <div id="resultadoPesquisa"></div>
+    </div>
+                </td>
+                <td>
+                    <img src="kenstance.gif">
+                </td>
+            </tr>
+        </table>
+
+    <script src="main.js"></script>
+    </div>
+    <div class="column side">
+    </div>
+    </div>
+
+</body>
+</html>
